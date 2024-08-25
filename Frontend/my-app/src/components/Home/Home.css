@@ -90,7 +90,7 @@
     opacity: 0;
 }
 
-@keyframes fadeOutIn {
+/* @keyframes fadeOutIn {
     0%, 40% { opacity: 1; }
     50%, 90% { opacity: 0; }
     100% { opacity: 1; }
@@ -100,11 +100,12 @@
     0%, 40% { opacity: 0; }
     50%, 90% { opacity: 1; }
     100% { opacity: 0; }
-}
+} */
 
 .home-section .home-person-image{
     height: 100%;
     width: 100%;
+    
 }
 
 .home-section .home-person-image img{
@@ -585,60 +586,71 @@
     justify-content: center;
     align-items: center;
 }
-.works-section .work-slider .work-item{
-    position: relative;
-    height: 390px;
-}
-.works-section .work-slider .work-item .work-contents .hover-description{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:#ffbd39ee;
-    color: #fff;
-    padding: 30px;
-    width: 100%;
-    height: 500px;
-    transition: transform .6s ease;
-    transform: translateY(102%);
-}
-.works-section .work-slider .work-item .work-contents .hover-description h4{
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.works-section .work-slider .work-item .work-contents .hover-description p{
-    font-size: 15px;
-    text-transform: capitalize;
-}
-.works-section .work-slider .work-item:hover .hover-description{
-    transform: translateY(0);
-}
 
-.works-section .work-slider .work-item .work-contents .work-image{
-    height: 500px;
-}
-
-.works-section .work-slider .work-item .work-contents .work-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .works-section .work-slider .slick-slide{
     padding: 0 15px;
 }
-/* .works-section .work-slider .work-item .work-contents h1{
-    position: absolute;
+
+.works-section .work-card{
+    position: relative;
+    background-color: #212221;
     color: #fff;
-    background-color: #ffbd39;
-    padding: 10px;
-    bottom: -15px;
-    left: 0;
-    right: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.work-card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 350px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover img{
+    transform: scale(1.02);
+}
+
+.work-card .title{
     font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-card .title span{
+    background-color: #fff;
+    color: #212221;
+    width: 30px;
+    height: 30px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.work-card button{
+    background-color: #ffbd39;
+    border: 1px solid #ffbd39;
+    border: none;
+    color: #212221;
     font-weight: 600;
-} */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.work-card button:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
 
 /* freelance-section */
 
@@ -739,6 +751,7 @@
     margin-bottom: 30px;
     transition: transform 0.3s ease;
     transform: scale(0.9);
+    cursor: pointer;
 }
 
 .contact-section .contact-icons li:first-child:hover{
@@ -751,11 +764,13 @@
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .contact-section .contact-icons li h5{
     color: #999999;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .contact-section .contents{
