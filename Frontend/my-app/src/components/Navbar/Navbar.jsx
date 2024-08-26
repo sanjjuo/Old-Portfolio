@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../Home/Home.css"
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom"
-import { ImMenu } from "react-icons/im";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { FaXmark } from "react-icons/fa6";
 
 const MyNavbar = () => {
@@ -20,7 +20,7 @@ const MyNavbar = () => {
                     <Container style={{ padding: "0" }}>
                         <Navbar.Brand as={Link} to="/" href="#home">sanjeed.</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleMenu} className="navbar-toggler">
-                            <span className="navbar-menu">{!menu ? <ImMenu /> : <FaXmark />}</span>
+                            <span className="navbar-menu">{!menu ? <HiMenuAlt3 size={30} /> : <FaXmark size={30} />}</span>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ms-auto">

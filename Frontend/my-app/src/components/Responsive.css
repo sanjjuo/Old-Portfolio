@@ -12,13 +12,13 @@
         padding: 20px;
     }
 
- .navbar-section .navbar-brand {
+    .navbar-section .navbar-brand {
         margin: 0;
         padding: 0;
         font-size: 20px;
     }
 
-    .navbar-section .navbar .active{
+    .navbar-section .navbar .active {
         color: #ffbd39;
         border: none;
     }
@@ -35,81 +35,24 @@
         padding: 0;
         position: relative;
         width: 100%;
-        height: 600px;
-    }
-
-    .home-contents-with-image,
-    .home-contents-with-image2 {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .home-contents-with-image {
-        animation: fadeOutIn 5s infinite;
-    }
-
-    .home-contents-with-image2 {
-        animation: fadeInOut 5s infinite;
-        opacity: 0;
-    }
-
-    @keyframes fadeOutIn {
-
-        0%,
-        40% {
-            opacity: 1;
-        }
-
-        50%,
-        90% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeInOut {
-
-        0%,
-        40% {
-            opacity: 0;
-        }
-
-        50%,
-        90% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
     }
 
 
     .mobile-home-section .home-person-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
 
     .mobile-home-section .home-person-image img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
 
     .mobile-home-section .contents {
         position: absolute;
-        top: 35%;
+        top: 40%;
         max-width: 100%;
         padding: 0 5px;
 
@@ -125,7 +68,7 @@
     }
 
     .mobile-home-section .contents h2 {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 800;
         letter-spacing: 2px;
         color: #ededed;
@@ -140,7 +83,7 @@
         font-size: 18px;
         margin: 0;
         color: #ededed;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .mobile-home-section .contents .button-container {
@@ -222,8 +165,36 @@
         padding: 50px 0 0 !important;
     }
 
+    .about-section .container-fluid {
+        margin: 0;
+    }
+
     .about-section .col-md-7 {
         padding: 0 !important;
+    }
+
+    .about-section .image {
+        height: 500px;
+    }
+
+    .about-section .col-md-7 h2 {
+        text-transform: capitalize;
+        color: #ffbd39;
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+        border-right: 5px solid #ffbd39;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(18) 1s forwards, cursor .4s step-end infinite alternate;
+    }
+
+    .about-section .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: contain;
     }
 
     .about-section ul li span:first-child {
@@ -235,8 +206,8 @@
     }
 
     .about-section h1 {
-        margin-top: 20px !important;
         font-size: 25px !important;
+        margin: 0;
     }
 
     .about-section p {
@@ -402,6 +373,10 @@
         font-size: 20px;
     }
 
+    .contact-section .contact-icons {
+        margin: 0;
+    }
+
     .contact-section .contents .contact-input {
         padding: 20px;
     }
@@ -472,6 +447,7 @@
         padding: 10px 30px;
         background-color: black;
     }
+
     .home-section {
         height: 400px;
     }
@@ -520,9 +496,10 @@
 
     .footer-section .footer-contents .links-footer li,
     .footer-section .footer-contents .services-footer li,
-    .footer-section .footer-contents .question-footer li{
+    .footer-section .footer-contents .question-footer li {
         font-size: 17px;
     }
+
     .footer-section .footer-contents .question-footer li span {
         margin-right: 5px;
     }

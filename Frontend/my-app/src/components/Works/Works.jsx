@@ -13,12 +13,13 @@ const Works = () => {
 
     const [data, setData] = useState(works)
     const [modalShow, setModalShow] = useState(false);
+    const [selectedWork, setSelectedWork] = useState(null);
 
     const handleClick = (work) => {
-        setModalShow(true)
-        setData(work)
+        setSelectedWork(work);
+        setModalShow(true);
         console.log(work);
-
+        
     }
 
     const settings1 = {
@@ -67,8 +68,8 @@ const Works = () => {
                 <div className="work-slider">
                     <Slider {...settings1}>
                         {data.map((work, index) => (
-                            <motion.div initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6, delay: index * 0.1}}>
-                                <Card className='work-card' key={index}>
+                            <motion.div initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6, delay: index * 0.1}} key={index}>
+                                <Card className='work-card'>
                                     <Card.Img variant="top" src="/restuarent.jpg" />
                                     <Card.Body>
                                         <Card.Title className='title'>{work.name} <span><HiMiniEye onClick={() => handleClick(work)} /></span></Card.Title>
@@ -80,7 +81,7 @@ const Works = () => {
                     </Slider>
                 </div>
             </section>
-            <WorkModal show={modalShow} onHide={() => setModalShow(false)} />
+            <WorkModal show={modalShow} onHide={() => setModalShow(false)} work={selectedWork} />
         </div>
     )
 }

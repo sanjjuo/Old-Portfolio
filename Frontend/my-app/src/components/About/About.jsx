@@ -6,6 +6,7 @@ const About = () => {
     return (
         <div>
             <section className='about-section' id='about'>
+            <h1>About Me</h1>
                 <div className="container-fluid">
                     <div className="row">
                         <motion.div
@@ -14,7 +15,7 @@ const About = () => {
                             transition={{ duration: 0.5 }}
                             className="col-md-5">
                             <div className="image">
-                                <img src="bg_1.png" alt="" />
+                                <img src="me1-Photoroom.png" alt="" />
                             </div>
                         </motion.div>
                         <motion.div
@@ -22,9 +23,13 @@ const About = () => {
                             whileInView={{ opacity: 1, y: -10 }}
                             transition={{ duration: 1.5 }}
                             className="col-md-7">
-                            <h1>about me</h1>
-                            <p>I'm React.js developer having 6 months of experince based in India. Gained some hands-on experince in react.js and created some numerous projects.
-                            </p>
+                            <h2>Hello, I'm Mohamed Sanjeed !</h2>
+                            <p>Jr React Developer with 6 months of experience in designing and developing.
+                                Skilled in variety of Programming languages and technologies including
+                                React.js, MERN stack, React Native, HTML, CSS, JavaScript. Proficient in
+                                building scalable, efficient, and user-friendly web and mobile applications.
+                                Passionate about staying up-to-date with the latest technologies and best
+                                practices.</p>
                             <ul>
                                 <li className='d-flex'>
                                     <span>Name:</span>
@@ -52,7 +57,7 @@ const About = () => {
                                 </li>
                             </ul>
                             <div className="about-button">
-                                <button type="button" className="btn">download CV</button>
+                                <a href="/resume.pdf" download="MohamedSanjeed_CV.pdf"><button type="button" className="btn">download CV</button></a>
                             </div>
                         </motion.div>
                     </div>

@@ -3,6 +3,8 @@ import "../Home/Home.css"
 import { FaArrowRightLong, FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import ReactWhatsapp from 'react-whatsapp';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -16,13 +18,15 @@ const Footer = () => {
                                 <p>Far far away, behind the word mountains,
                                     far from the countries Vokalia and Consonantia,
                                     there live the blind texts.</p>
-                                <ul>
-                                    <li><FaFacebookF /></li>
-                                    <li><FaInstagram /></li>
-                                    <li><FaXTwitter /></li>
-                                    <li><FaWhatsapp /></li>
-                                    <li><FaLinkedinIn /></li>
-                                </ul>
+                                    <ul>
+                                        <Link  to="https://www.facebook.com/profile.php?id=100092943613170" target='_blank'><li><FaFacebookF /></li></Link>
+                                        <Link to="https://www.instagram.com/sanjjuo/" target='_blank'><li><FaInstagram /></li></Link>
+                                        <li><FaXTwitter /></li>
+                                        <ReactWhatsapp number="+91 7902501645" message="Hello Mohamed Sanjeed!" element="div" style={{ display: "inline-block", cursor: "pointer" }}>
+                                            <li><FaWhatsapp /></li>
+                                        </ReactWhatsapp>
+                                        <Link to="https://www.linkedin.com/in/mohamedsanjeed/" target='_blank'><li><FaLinkedinIn /></li></Link>
+                                    </ul>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
@@ -56,15 +60,15 @@ const Footer = () => {
                             <div className="question-footer">
                                 <h3>have a question ?</h3>
                                 <ul>
-                                    <li><span><FaLocationDot /></span>Malappuram, Kerala, India</li>
-                                    <li><span><FaPhoneAlt /></span>+91 7902501645</li>
-                                    <li><span><FaEnvelope /></span>sanjeedofficial22@gmail.com</li>
+                                    <li><span><FaLocationDot /></span><a href="https://maps.app.goo.gl/jvWw9cAePUHJcjXJ8" target='_blank' style={{textDecoration:"none", color:"inherit"}}>Malappuram, Kerala, India</a></li>
+                                    <li><span><FaPhoneAlt /></span><a href="tel:+917902501645" style={{textDecoration:"none", color:"inherit"}}>+91 7902501645</a></li>
+                                    <li><span><FaEnvelope /></span><a href="mailto:sanjeedofficial22@gmail.com" style={{textDecoration:"none", color:"inherit"}}>sanjeedofficial22@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div className="copyright-footer">
-                        Copyright ©2024 All rights reserved | This template is made with  by Colorlib
+                        Copyright &copy;{new Date().getFullYear()} Mohamed Sanjeed. All rights reserved.
                     </div>
                 </div>
             </section>

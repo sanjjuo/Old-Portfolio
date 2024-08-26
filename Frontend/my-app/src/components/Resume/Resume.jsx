@@ -10,8 +10,8 @@ const Resume = () => {
                 <h1>resume</h1>
                 <div className="container p-0">
                     <ul>
-                        <li onClick={() => setResume("education")}>education</li>
-                        <li onClick={() => setResume("experience")}>experience</li>
+                        <li onClick={() => setResume("education")} className={resume === "education" ? "active" : ""}>education</li>
+                        <li onClick={() => setResume("experience")} className={resume === "experience" ? "active" : ""}>experience</li>
                     </ul>
                 </div>
                 {resume === "education" && (
@@ -38,7 +38,7 @@ const Resume = () => {
                                     <h3>2020 - 2023</h3>
                                     <h5>Bachelors of Computer Application</h5>
                                     <h6>mes kalladi college mannarkkad</h6>
-                                    <p>completed BCA Mes kalladi college. And started my love for IT sector from here.</p>
+                                    <p>completed BCA from Mes kalladi college. And started my journey for to explore the IT sector from here.</p>
                                 </div>
                             </motion.div>
                             <motion.div
@@ -83,21 +83,29 @@ const Resume = () => {
                                     <h6>W3 Digital Agency</h6>
                                     <p>
                                         <ul>
-                                            <li>Gained hands-on experience in Frontend design, Fetch
-                                                API, and resolving technical challenges.
+                                            <li><strong>Frontend Design & Development:</strong> Responsive UI for optimal user
+                                                experience across devices and screen sizes.
                                             </li>
-                                            <li>Integrated RESTful APIs and third-party libraries to
-                                                extend application functionality.
+                                            <li><strong>Responsive UI:</strong> Developed and maintained responsive user interfaces
+                                                that ensure optimal user experience across various devices and screen
+                                                sizes.
                                             </li>
-                                            <li>Collaborated closely with backend developers to
-                                                optimize website performance and user experience.
+                                            <li><strong>API Interaction & Integration:</strong> API interaction and integration (RESTful
+                                                APIs, third-party libraries).
+
                                             </li>
-                                            <li>Gained knowledge in various NPM packages.</li>
-                                            <li>Demonstrated strong problem-solving skills and
-                                                attention to detail in all tasks and projects.
+                                            <li><strong>Collaboration:</strong> Collaborated with cross-functional teams to design and
+                                                implement new features.</li>
+                                            <li><strong>NPM Packages:</strong> NPM package management for streamlined
+                                                development.
+
                                             </li>
-                                            <li>Stayed updated with React.js updates and best
-                                                practices for innovative development.
+                                            <li><strong>Problem-Solving:</strong> Optimized application performance, fixed bugs, and
+                                                ensured high-quality code.
+
+                                            </li>
+                                            <li><strong>React.js:</strong> Stayed updated with the latest React.js updates and best
+                                                practices, applying innovative solutions in development projects.
                                             </li>
                                         </ul>
                                     </p>

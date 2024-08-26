@@ -1,0 +1,47 @@
+.modal .modal-content{
+    border-radius: 20px !important;
+    background-color: #212222;
+    color: #fff;
+}
+.header{
+    border: none;
+} 
+
+.btn-close{
+    background-color: #ffbd39;
+    border-radius: 99px;
+    font-size: 12px;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+.header .title h4{
+    font-weight: 700;
+    color: #ffbd39;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content .details button{
+    background-color: #ffbd39;
+    border: 2px solid #ffbd39;
+    color: #212222;
+    font-weight: 600;
+    width: 100%;
+}
+
+.modal-content .details button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #ffbd39;
+}
