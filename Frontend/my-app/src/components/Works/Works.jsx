@@ -8,6 +8,7 @@ import { HiMiniEye } from "react-icons/hi2";
 import { works } from '../../../WorksApi';
 import WorkModal from './WorkModal';
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 const Works = () => {
 
@@ -70,10 +71,10 @@ const Works = () => {
                         {data.map((work, index) => (
                             <motion.div initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6, delay: index * 0.1}} key={index}>
                                 <Card className='work-card'>
-                                    <Card.Img variant="top" src="/restuarent.jpg" />
+                                    <Card.Img variant="top" src={work.image} />
                                     <Card.Body>
                                         <Card.Title className='title'>{work.name} <span><HiMiniEye onClick={() => handleClick(work)} /></span></Card.Title>
-                                        <Button variant="primary">View Project <MdKeyboardDoubleArrowRight /></Button>
+                                        <Link style={{color:"inherit", textDecoration:"none"}} to={work?.link} target='_blank'><Button variant="primary">View Project <MdKeyboardDoubleArrowRight /></Button></Link>
                                     </Card.Body>
                                 </Card>
                             </motion.div>

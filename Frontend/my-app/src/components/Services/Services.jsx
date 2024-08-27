@@ -19,7 +19,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><CgWebsite /></span>
@@ -32,7 +32,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><FaLaptopCode /></span>
@@ -45,7 +45,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.9 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><FaDesktop /></span>
@@ -58,7 +58,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.2 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><HiOutlineLightBulb /></span>
@@ -71,7 +71,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.5 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><FaMobile /></span>
@@ -84,7 +84,7 @@ const Services = () => {
                             initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.8 }}
-                            className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className='service-item'>
                                 <div className="content">
                                     <span className='icon'><FaBell /></span>

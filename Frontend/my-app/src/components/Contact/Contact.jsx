@@ -95,11 +95,11 @@ const Contact = () => {
                                 <div className="row">
                                     <div className="col-md-5">
                                         <h2>Get in Touch</h2>
-                                        <p>"Have any questions or need assistance? We're here to help! Please fill out the contact form below,
-                                            and one of our team members will get back to you as soon as possible. Whether you’re looking for
-                                            more information about our services, have specific inquiries, or just want to leave feedback,
-                                            we’re eager to hear from you. Your satisfaction is our priority, and we’re committed to providing
-                                            prompt and effective responses to all your needs."</p>
+                                        <p>If you have any questions or need assistance, I'm here to help! Please feel free to fill out the contact form below, 
+                                            and I'll get back to you as soon as possible. Whether you're interested in learning more about my services, have 
+                                            specific inquiries, or simply want to share feedback, I'm eager to hear from you. Your satisfaction is my priority, 
+                                            and I’m committed to providing prompt and effective responses to all your needs.</p>
+                                            {/* <img src="football.gif" alt="Football GIF" /> */}
                                     </div>
                                     <div className="col-md-7">
                                         <form className="contact-input" onSubmit={sendMail}>
@@ -118,7 +118,7 @@ const Contact = () => {
                                                 initial={{ opacity: 0, y: 50 }}
                                                 whileInView={{ opacity: 1, y: -10 }}
                                                 transition={{ duration: 1.1 }}
-                                                type='text' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='message' id='message' name='message' cols={50} rows={7} required ></motion.textarea>
+                                                type='text' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='message' id='message' name='message' cols={50} rows={4} required ></motion.textarea>
 
                                             <div className="button-container">
                                                 <button type="submit" className="btn"

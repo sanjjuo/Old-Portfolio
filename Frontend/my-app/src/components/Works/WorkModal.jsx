@@ -2,6 +2,8 @@ import React from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import "../Works/WorkModal.css"
+import { Link } from 'react-router-dom';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const WorkModal = ({ show, onHide, work }) => {
     if (!work) return null;
@@ -24,13 +26,13 @@ const WorkModal = ({ show, onHide, work }) => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="image">
-                                <img src="gym.jpg" alt="" />
+                                <img src={work.image} alt="" />
                             </div>
                         </div>
                         <div className="col-md-8">
                             <div className="details">
                                 <p>{work.description}</p>
-                                <Button onClick={onHide}>View project</Button>
+                                <Link style={{color:"inherit", textDecoration:"none"}} to={work?.link} target='_blank'><Button variant="primary" onClick={onHide}>View Project <MdKeyboardDoubleArrowRight /></Button></Link>
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ const Home = () => {
                                      <ul>
                                         <Link  to="https://www.facebook.com/profile.php?id=100092943613170" target='_blank'><li><FaFacebookF /></li></Link>
                                         <Link to="https://www.instagram.com/sanjjuo/" target='_blank'><li><FaInstagram /></li></Link>
-                                        <li><FaXTwitter /></li>
+                                        <Link to="https://x.com/MohamedSanjeed1" target='_blank'><li><FaXTwitter /></li></Link>
                                         <ReactWhatsapp number="+91 7902501645" message="Hello Mohamed Sanjeed!" element="div" style={{ display: "inline-block", cursor: "pointer" }}>
                                             <li><FaWhatsapp /></li>
                                         </ReactWhatsapp>

@@ -377,12 +377,25 @@
         margin: 0;
     }
 
-    .contact-section .contents .contact-input {
-        padding: 20px;
+    .contact-section .contact-card .container {
+        padding: 0 !important;
     }
 
-    .contact-section .contents button {
-        width: 60%;
+    .contact-section .contact-card h2 {
+        font-size: 30px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .contact-section .contact-input {
+        margin-top: 30px;
+    }
+
+    .contact-section .contact-card button {
+        width: 100%;
+        font-size: 14px;
     }
 
     /* footer */
@@ -504,4 +517,53 @@
         margin-right: 5px;
     }
 
+}
+
+
+/* small laptop responsive */
+
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .app {
+        padding: 0 50px !important;
+    }
+
+    .home-section .contents h2 {
+        font-size: 65px;
+    }
+    .home-section .home-contents-with-image .contents p {
+        font-size: 29px;
+        width: 90%;
+    }
+    .about-section .col-md-7 h2 {
+        width: 96%;
+    }
+
+
+    /* footer */
+
+    .footer-section .footer-contents .question-footer h3,
+    .footer-section .footer-contents .footer-about h3,
+    .footer-section .footer-contents .links-footer h3,
+    .footer-section .footer-contents .services-footer h3 {
+        font-size: 23px;
+    }
+
+    .footer-section .footer-contents .footer-about p ,
+    .footer-section .footer-contents .links-footer li a ,
+    .footer-section .footer-contents .services-footer li,
+    .footer-section .footer-contents .question-footer li {
+        font-size: 14.4px;
+    }
+
+    .footer-section .footer-contents .footer-about li {
+        font-size: 18px;
+        height: 35px;
+        width: 35px;
+        padding: 3px;
+    }
+    .footer-section .footer-contents .question-footer li span {
+        margin-right: 5px;
+    }
+    
 }
