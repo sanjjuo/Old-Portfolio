@@ -676,6 +676,11 @@
     cursor: pointer;
 }
 
+.work-card .title span:hover{
+    background-color: #ffbd39;
+    color: #000;
+}
+
 .work-card button {
     background-color: #ffbd39;
     border: 1px solid #ffbd39;
@@ -699,7 +704,6 @@
     color: #fff;
     border: 1px solid #fff;
 }
-
 
 
 /* freelance-section */
@@ -919,12 +923,13 @@
     font-weight: 700;
     letter-spacing: 2px;
     padding: 10px;
+    border: 2px solid #ffbd39;
 }
 
 .contact-section .contact-card button:hover {
     background-color: transparent;
-    color: #fff;
-    border: 1px solid #999999;
+    color: #212221;
+    border: 2px solid #999999;
 }
 
 /* footer-section */

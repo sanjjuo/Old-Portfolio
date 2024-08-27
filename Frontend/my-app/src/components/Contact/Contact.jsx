@@ -7,6 +7,8 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { motion } from "framer-motion";
 import Card from 'react-bootstrap/Card';
+import { FaRocketchat } from "react-icons/fa6";
+import { BiSad } from "react-icons/bi";
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -31,13 +33,34 @@ const Contact = () => {
             setName("")
             setEmail("")
             setMessage("")
-            toast.success(data.message);
+            toast.success(data.message, {
+                icon: <FaRocketchat style={{ color: "#ffbd39", size: "30px" }} />,
+                hideProgressBar: true,
+                style: {
+                    backgroundColor: "#212222",
+                    color: "#ffbd39",
+                    fontSize: "15px",
+                    borderRadius: "10px",
+                    border: "1px solid #b5caca"
+                }
+
+            })
             setLoading(false)
 
         } catch (error) {
             setLoading(false)
             console.error("Error:", error);
-            toast.error(error.response.data.message);
+            toast.error(error.response.data.message, {
+                icon: <BiSad style={{ color: "#ffbd39", size: "30px" }} />,
+                hideProgressBar: true,
+                style: {
+                    backgroundColor: "#212222",
+                    color: "#ffbd39",
+                    fontSize: "15px",
+                    borderRadius: "10px",
+                    border: "1px solid #b5caca"
+                }
+            });
         }
     }
 
@@ -95,11 +118,11 @@ const Contact = () => {
                                 <div className="row">
                                     <div className="col-md-5">
                                         <h2>Get in Touch</h2>
-                                        <p>If you have any questions or need assistance, I'm here to help! Please feel free to fill out the contact form below, 
-                                            and I'll get back to you as soon as possible. Whether you're interested in learning more about my services, have 
-                                            specific inquiries, or simply want to share feedback, I'm eager to hear from you. Your satisfaction is my priority, 
+                                        <p>If you have any questions or need assistance, I'm here to help! Please feel free to fill out the contact form below,
+                                            and I'll get back to you as soon as possible. Whether you're interested in learning more about my services, have
+                                            specific inquiries, or simply want to share feedback, I'm eager to hear from you. Your satisfaction is my priority,
                                             and I’m committed to providing prompt and effective responses to all your needs.</p>
-                                            {/* <img src="football.gif" alt="Football GIF" /> */}
+                                        {/* <img src="football.gif" alt="Football GIF" /> */}
                                     </div>
                                     <div className="col-md-7">
                                         <form className="contact-input" onSubmit={sendMail}>
