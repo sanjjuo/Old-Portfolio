@@ -19,7 +19,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-7">
                             <div className="contents">
-                                <motion.h1 initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.5 }}>hello!</motion.h1>
+                                <motion.h1 initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.5 }}>hello!</motion.h1>
                                 <motion.h2 initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.8 }}>I'm <span>Mohamed Sanjeed</span></motion.h2>
                                 <motion.p initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.1 }}>A Freelance React.js developer</motion.p>
                                 <motion.div
@@ -44,7 +44,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-5">
                             <motion.div
-                                initial={{ opacity: 0, x: 250 }}
+                                initial={{ opacity: 0, x: 150 }}
                                 whileInView={{ opacity: 1, x: -10 }}
                                 transition={{ duration: 0.5 }}
                                 className="home-person-image">
