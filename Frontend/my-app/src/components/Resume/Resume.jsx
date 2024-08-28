@@ -81,7 +81,6 @@ const Resume = () => {
                                     <h3>Jan 2024 - Jul 2024</h3>
                                     <h5>Jr. React.js Developer</h5>
                                     <h6>W3 Digital Agency</h6>
-                                    <p>
                                         <ul>
                                             <li><strong>Frontend Design & Development:</strong> Responsive UI for optimal user
                                                 experience across devices and screen sizes.
@@ -108,7 +107,6 @@ const Resume = () => {
                                                 practices, applying innovative solutions in development projects.
                                             </li>
                                         </ul>
-                                    </p>
                                 </div>
                             </motion.div>
                         </div>

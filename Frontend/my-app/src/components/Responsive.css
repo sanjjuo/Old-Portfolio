@@ -178,16 +178,10 @@
     }
 
     .about-section .col-md-7 h2 {
-        text-transform: capitalize;
-        color: #ffbd39;
-        font-size: 20px;
-        font-weight: 800;
-        margin: 0;
-        border-right: 5px solid #ffbd39;
+        font-size: 19px;
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 2s steps(18) 1s forwards, cursor .4s step-end infinite alternate;
+        animation: none;
+        border: none;
     }
 
     .about-section .image img {
@@ -212,6 +206,10 @@
 
     .about-section p {
         font-size: 14px !important;
+    }
+
+    .about-section .about-button button {
+        width: 100%;
     }
 
     /* resume */
@@ -246,11 +244,15 @@
     }
 
     .resume-section .education-cards .card p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .resume-section .education-cards .card {
         height: 240px;
+    }
+
+    .resume-section .experience-cards .card {
+        height: 770px !important;
     }
 
     .resume-section .experience-cards .card h3 {
@@ -265,12 +267,16 @@
         font-size: 11px;
     }
 
-    .resume-section .experience-cards .card p li {
-        font-size: 14px;
+    .resume-section .experience-cards .card ul {
+        padding: 0 10px;
     }
 
-    .resume-section .experience-cards .card {
-        height: 500px;
+    .resume-section .experience-cards .card li {
+        font-size: 14px;
+    }
+    
+    .resume-section .education-cards .card p {
+        font-size: 16px;
     }
 
     /* service */
@@ -291,6 +297,11 @@
         padding: 40px;
     }
 
+    .services-section .service-cards .service-item .content h5{
+        font-size: 17px;
+    }
+    
+
     /* skills */
 
     .skills-section {
@@ -310,7 +321,7 @@
         height: 15px;
     }
 
-    .skills-bars li span {
+    .skills-bars li h5 {
         font-size: 17px;
     }
 
@@ -328,8 +339,32 @@
         font-size: 25px;
     }
 
+    .work-card .title {
+        font-size: 17px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .works-section .work-slider .slick-slide {
-        padding: 0;
+        padding: 0 5px;
+    }
+
+    .work-card .title span {
+        width: 28px;
+        height: 25px;
+    }
+
+    /* modal */
+
+    .header .title h4 {
+        font-size: 19px;
+        margin: 0;
+    }
+
+    .modal-body p{
+        padding-top: 20px;
     }
 
     /* freelance section */
@@ -347,6 +382,10 @@
         top: 35%;
         left: 0%;
         right: 0%;
+    }
+
+    .freelance-section .freelance-image img {
+        object-fit: cover;
     }
 
     /* contact */
@@ -376,6 +415,11 @@
     .contact-section .contact-icons {
         margin: 0;
     }
+
+    .contact-section .contact-icons ul{
+        margin-top: 30px;
+    }
+
 
     .contact-section .contact-card .container {
         padding: 0 !important;

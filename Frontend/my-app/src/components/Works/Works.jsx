@@ -30,8 +30,8 @@ const Works = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 6000,
+        speed: 700,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1024,

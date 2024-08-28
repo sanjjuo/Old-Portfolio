@@ -45,19 +45,19 @@ const Skills = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <ul>
                                 <motion.li initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 5 }}
+                                    whileInView={{ opacity: 1, y: -10 }}
                                     transition={{ duration: 1.5 }}><span><h5>Express.js</h5><h5>{`${now6}%`}</h5></span><ProgressBar className='bar' now={now6} /></motion.li>
 
                                 <motion.li initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 8 }}
+                                    whileInView={{ opacity: 1, y: -7 }}
                                     transition={{ duration: 1.7 }}><span><h5>html</h5><h5>{`${now1}%`}</h5></span><ProgressBar className='bar' now={now1} /></motion.li>
 
                                 <motion.li initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 11 }}
+                                    whileInView={{ opacity: 1, y: -4 }}
                                     transition={{ duration: 1.9 }}><span><h5>CSS</h5><h5>{`${now3}%`}</h5></span><ProgressBar className='bar' now={now3} /></motion.li>
 
                                 <motion.li initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 14 }}
+                                    whileInView={{ opacity: 1, y: -1 }}
                                     transition={{ duration: 2.1 }}><span><h5>Bootstrap</h5><h5>{`${now4}%`}</h5></span><ProgressBar className='bar' now={now4} /></motion.li>
                             </ul>
                         </div>

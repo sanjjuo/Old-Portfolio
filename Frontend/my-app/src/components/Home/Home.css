@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: transparent;
     z-index: 999;
 }
 
@@ -120,30 +120,30 @@
     margin: 0;
     color: #ededed;
     font-weight: 700;
-    border-right: 5px solid #fff;
+    /* border-right: 5px solid #fff;
     width: 82%;
     white-space: nowrap;
     overflow: hidden;
     animation:
         typing 2s steps(18)1s forwards,
-        cursor .4s step-end infinite alternate;
+        cursor .4s step-end infinite alternate; */
 }
 
 /* cursor binking */
 
-@keyframes cursor {
+/* @keyframes cursor {
     50% {
         border-color: transparent;
     }
-}
+} */
 
 /* typing effects */
 
-@keyframes typing {
+/* @keyframes typing {
     from {
         width: 0
     }
-}
+} */
 
 
 .home-section .contents .button-container {
@@ -253,30 +253,30 @@
     font-size: 35px;
     font-weight: 800;
     margin: 0;
-    border-right: 5px solid #ffbd39;
+    /* border-right: 5px solid #ffbd39;
     width: 73%;
     white-space: nowrap;
     overflow: hidden;
     animation:
         typing 2s steps(18)1s forwards,
-        cursor .4s step-end infinite alternate;
+        cursor .4s step-end infinite alternate; */
 }
 
 /* cursor binking */
 
-@keyframes cursor {
+/* @keyframes cursor {
     50% {
         border-color: transparent;
     }
-}
+} */
 
 /* typing effects */
 
-@keyframes typing {
+/* @keyframes typing {
     from {
         width: 0
     }
-}
+} */
 
 
 .about-section p {
@@ -428,6 +428,11 @@
     font-size: 16px;
 }
 
+.resume-section .education-cards .card p:hover{
+    color: #ffbd39;
+    cursor: default;
+}
+
 /* experience cards */
 
 .resume-section .experience-cards .card {
@@ -461,16 +466,17 @@
     font-weight: 600;
 }
 
-.resume-section .experience-cards .card p ul {
+.resume-section .experience-cards .card ul {
     color: #999999;
     display: flex;
     flex-direction: column;
     padding: 0 20px;
 }
 
-.resume-section .experience-cards .card p li {
+.resume-section .experience-cards .card li {
     font-size: 16px;
     padding-bottom: 10px;
+    cursor: default;
 }
 
 .resume-section .experience-cards .card p li:hover {
