@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import ReactWhatsapp from "react-whatsapp"
 
 const Home = () => {
+    
 
     return (
         <div>
@@ -48,7 +49,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, x: -10 }}
                                 transition={{ duration: 0.5 }}
                                 className="home-person-image">
-                                <img src="me1-Photoroom.png" alt="" />
+                                <img src="me.png" alt="" />
                             </motion.div>
                         </div>
                     </div>
@@ -63,7 +64,7 @@ const Home = () => {
                         whileInView={{ opacity: 1, x: -10 }}
                         transition={{ duration: 0.5 }}
                         className="home-person-image">
-                        <img src="me1-Photoroom.png" alt="" />
+                        <img src="me.png" alt="" />
                     </motion.div>
                     <div className="contents">
                         <motion.h1 initial={{ opacity: 0, x: -150 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.5 }}>hello!</motion.h1>

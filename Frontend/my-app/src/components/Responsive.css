@@ -509,6 +509,10 @@
         font-size: 40px;
     }
 
+    .home-section .home-contents-with-image .contents p {
+        font-size: 20px !important;
+    }
+
     .home-section .contents .social-media-icons ul {
         position: fixed;
         right: 15px;

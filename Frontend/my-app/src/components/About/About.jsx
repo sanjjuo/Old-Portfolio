@@ -15,7 +15,7 @@ const About = () => {
                             transition={{ duration: 0.5 }}
                             className="col-md-5">
                             <div className="image">
-                                <img src="me1-Photoroom.png" alt="" />
+                                <img src="me.png" alt="" />
                             </div>
                         </motion.div>
                         <motion.div
