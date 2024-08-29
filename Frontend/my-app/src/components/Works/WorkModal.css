@@ -1,7 +1,6 @@
 .modal .modal-content{
-    border-radius: 20px !important;
+    border-radius: 20px;
     background-color: #212222;
-    color: #fff;
 }
 .header{
     border: none;
@@ -37,6 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.modal-content .details p{
+    color: #fff;
 }
 
 .modal-content .details button{

@@ -156,8 +156,7 @@
 
 
 
-.home-section .home-contents-with-image .contents .button-container .btn1,
-.home-section .home-contents-with-image2 .contents .button-container .btn1 {
+.home-section .home-contents-with-image .contents .button-container .btn1 {
     margin-right: 10px;
     text-transform: capitalize;
     padding: 10px 30px;
@@ -169,8 +168,7 @@
     border-radius: 10px;
 }
 
-.home-section .home-contents-with-image .contents .button-container .btn,
-.home-section .home-contents-with-image2 .contents .button-container .btn {
+.home-section .home-contents-with-image .contents .button-container .btn {
     margin-right: 20px;
     text-transform: capitalize;
     padding: 10px 30px;

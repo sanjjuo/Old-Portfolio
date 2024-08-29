@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Home/Home.css"
 import "../Responsive.css"
 import { FaFacebookF } from "react-icons/fa";
@@ -9,9 +9,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
 import ReactWhatsapp from "react-whatsapp"
+import DownloadModal from './DownloadModal';
 
 const Home = () => {
-    
+
+    const [downloadModal, setDownloadModal] = useState(false)
 
     return (
         <div>
@@ -27,7 +29,7 @@ const Home = () => {
                                     initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.4 }}
                                     className="button-container">
                                     <a href="#contact"><motion.button initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn1">hire me</motion.button></a>
-                                    <a href="/resume.pdf" download="MohamedSanjeed_CV.pdf"><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
+                                    <a onClick={() => setDownloadModal(true)}><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
                                 </motion.div>
                                 <div
                                     className="social-media-icons">
@@ -56,7 +58,6 @@ const Home = () => {
                 </div>
             </section>
 
-
             <section className="mobile-home-section">
                 <div className="home-contents-with-image">
                     <motion.div
@@ -74,12 +75,14 @@ const Home = () => {
                             initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.4 }}
                             className="button-container">
                             <a href="#contact"><motion.button initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn1">hire me</motion.button></a>
-                            <a href="/resume.pdf" download="MohamedSanjeed_CV.pdf"><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
+                            <a onClick={() => setDownloadModal(true)}><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
                         </motion.div>
                     </div>
                 </div>
             </section>
+            <DownloadModal show={downloadModal} onHide={() => setDownloadModal(false)} />
         </div>
+
     )
 }
 
