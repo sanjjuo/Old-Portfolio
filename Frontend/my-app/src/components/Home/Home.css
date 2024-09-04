@@ -65,10 +65,13 @@
     margin: 0;
 }
 
+.mobile-navbar-section{
+    display: none;
+}
+
 /* home-section */
 
 .home-section {
-    position: relative;
     padding: 0;
     width: 100%;
 }
@@ -86,13 +89,13 @@
 
 }
 
+.home-section .container .col-md-7{
+    display: flex;
+    align-items: center;
+}
 
 .home-section .contents {
-    position: absolute;
-    top: 25%;
-    max-width: 50%;
-    padding: 0 5px;
-
+    max-width: 80%;
 }
 
 .home-section .contents h1 {
@@ -115,78 +118,50 @@
     color: #ffbd39;
 }
 
-.home-section .home-contents-with-image .contents p {
+.home-section .container .contents p {
     font-size: 35px;
     margin: 0;
     color: #ededed;
     font-weight: 700;
-    /* border-right: 5px solid #fff;
-    width: 82%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 2s steps(18)1s forwards,
-        cursor .4s step-end infinite alternate; */
 }
-
-/* cursor binking */
-
-/* @keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-} */
-
-/* typing effects */
-
-/* @keyframes typing {
-    from {
-        width: 0
-    }
-} */
-
 
 .home-section .contents .button-container {
-    position: absolute;
-    top: 280px;
-    align-items: center;
     display: flex;
-    z-index: 999;
+    margin-top: 30px;
 }
 
-
-
-.home-section .home-contents-with-image .contents .button-container .btn1 {
+.home-section .container .contents .button-container .btn1 {
     margin-right: 10px;
     text-transform: capitalize;
-    padding: 10px 30px;
+    padding: 10px 40px;
     letter-spacing: 1px;
     background-color: #ffbd39;
     border: 2px solid #ffbd39;
     color: #000;
     font-weight: 700;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.home-section .home-contents-with-image .contents .button-container .btn {
-    margin-right: 20px;
+.home-section .container .contents .button-container .btn {
     text-transform: capitalize;
-    padding: 10px 30px;
+    padding: 10px 40px;
     letter-spacing: 1px;
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.home-section .home-contents-with-image .contents .button-container .btn1:hover {
+.home-section .container .contents .button-container .btn1:hover {
     background-color: transparent;
     border: 2px solid #fff;
     color: #ffbd39;
 }
 
-.home-section .home-contents-with-image .contents .button-container .btn:hover {
+.home-section .container .contents .button-container .btn:hover {
     background-color: #ffbd39;
     color: #000;
     border: 2px solid transparent;

@@ -1,29 +1,117 @@
 @media (min-width:320px) and (max-width:480px) {
 
     /* navbar */
-    .navbar-section .navbar-expand-lg {
-        height: 60px !important;
-        padding: 0 0px !important;
+
+    .navbar-section {
+        display: none;
     }
 
-    .navbar-section .navbar-nav {
-        gap: 15px;
-        background-color: #000;
-        padding: 20px;
+    .mobile-navbar-section {
+        display: block;
+        padding: 8px 10px;
     }
 
-    .navbar-section .navbar-brand {
+    .mobile-navbar-section ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-navbar-section li:first-child {
+        color: #ffbd39;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 1px;
         margin: 0;
         padding: 0;
-        font-size: 20px;
     }
 
-    .navbar-section .navbar .active {
+    .mobile-navbar-section li {
         color: #ffbd39;
-        border: none;
     }
 
+    .offcanvas {
+        max-width: 65%;
+        padding: 20px 15px;
+        background-color: #212222;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
+    .offcanvas .offcanvas-title {
+        color: #ffbd39;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .offcanvas .btn-close {
+        background-color: transparent;
+        border-radius: 99px;
+        font-size: 12px;
+    }
+
+    .offcanvas .offcanvas-body {
+        margin-top: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .offcanvas-body .offcanvas-items ul {
+        line-height: 40px;
+        padding: 0 0.5rem;
+        list-style: none;
+    }
+
+    .offcanvas-body .offcanvas-items li {
+        font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: #fff;
+        transition: transform 0.3s ease;
+        transform: scale(1);
+    }
+
+    .offcanvas-body .offcanvas-items li:hover {
+        color: #ffbd39;
+        transform: scale(1.05);
+    }
+
+    .offcanvas-body .social-media-icons ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 5px;
+        margin: 0;
+    }
+
+    .offcanvas-body .social-media-icons li {
+        width: 30px;
+        height: 30px;
+        border-radius: 99px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        transition: transform 0.3s ease;
+        background-color: #212222;
+        border: 1px solid #ffffff23;
+        color: #ffbd39;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        transform: scale(1);
+    }
+
+    .offcanvas-body .social-media-icons li:hover{
+        background-color: #ffbd39;
+        color: #212222;
+        transform: scale(1.05);
+    }
 
     /* home */
     .home-section {
@@ -89,31 +177,35 @@
     .mobile-home-section .contents .button-container {
         padding-top: 30px;
         align-items: center;
+        justify-content: space-between;
         display: flex;
+        width: 100%;
     }
 
     .mobile-home-section .contents .button-container .btn1 {
         margin-right: 10px;
         text-transform: capitalize;
-        padding: 10px 18px;
+        padding: 10px 23px;
         letter-spacing: 1px;
         background-color: #ffbd39;
         border: 1px solid transparent;
         color: #000;
         font-weight: 600;
         border-radius: 10px;
+        text-decoration: none;
     }
 
     .mobile-home-section .contents .button-container .btn {
-        margin-right: 20px;
+        margin-right: 10px;
         text-transform: capitalize;
-        padding: 10px 18px;
+        padding: 10px 23px;
         letter-spacing: 1px;
         background-color: transparent;
         border: 1px solid #fff;
         color: #fff;
         font-weight: 600;
         border-radius: 10px;
+        text-decoration: none;
     }
 
     .mobile-home-section .contents .button-container .btn1:hover {
@@ -274,7 +366,7 @@
     .resume-section .experience-cards .card li {
         font-size: 14px;
     }
-    
+
     .resume-section .education-cards .card p {
         font-size: 16px;
     }
@@ -297,10 +389,10 @@
         padding: 40px;
     }
 
-    .services-section .service-cards .service-item .content h5{
+    .services-section .service-cards .service-item .content h5 {
         font-size: 17px;
     }
-    
+
 
     /* skills */
 
@@ -363,7 +455,7 @@
         margin: 0;
     }
 
-    .modal-body p{
+    .modal-body p {
         padding-top: 20px;
     }
 
@@ -416,7 +508,7 @@
         margin: 0;
     }
 
-    .contact-section .contact-icons ul{
+    .contact-section .contact-icons ul {
         margin-top: 30px;
     }
 
@@ -505,11 +597,21 @@
     }
 
     .home-section .contents h2 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
-    .home-section .home-contents-with-image .contents p {
+    .home-section .container .contents p {
         font-size: 20px !important;
+    }
+
+    .home-section .container .contents .button-container .btn1 {
+        padding: 10px;
+        width: 30%;
+    }
+
+    .home-section .container .contents .button-container .btn1 {
+        padding: 10px;
+        width: 30%;
     }
 
     .home-section .contents .social-media-icons ul {
@@ -575,10 +677,12 @@
     .home-section .contents h2 {
         font-size: 65px;
     }
+
     .home-section .home-contents-with-image .contents p {
         font-size: 29px;
         width: 90%;
     }
+
     .about-section .col-md-7 h2 {
         width: 96%;
     }
@@ -593,8 +697,8 @@
         font-size: 23px;
     }
 
-    .footer-section .footer-contents .footer-about p ,
-    .footer-section .footer-contents .links-footer li a ,
+    .footer-section .footer-contents .footer-about p,
+    .footer-section .footer-contents .links-footer li a,
     .footer-section .footer-contents .services-footer li,
     .footer-section .footer-contents .question-footer li {
         font-size: 14.4px;
@@ -606,8 +710,9 @@
         width: 35px;
         padding: 3px;
     }
+
     .footer-section .footer-contents .question-footer li span {
         margin-right: 5px;
     }
-    
+
 }

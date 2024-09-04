@@ -1,2 +1,21 @@
+.scroll-to-top {
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    cursor: pointer;
+}
 
+.icon {
+    font-size: 40px;
+    color: #ffcb39;
+}
 
+.icon:hover {
+    color: #fff;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .scroll-to-top{
+        display: none;
+    }
+}

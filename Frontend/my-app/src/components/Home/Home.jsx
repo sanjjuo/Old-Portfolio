@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div>
             <section className="home-section" id='home'>
-                <div className="home-contents-with-image">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-7">
                             <div className="contents">
@@ -28,8 +28,18 @@ const Home = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.4 }}
                                     className="button-container">
-                                    <a href="#contact"><motion.button initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn1">hire me</motion.button></a>
-                                    <a onClick={() => setDownloadModal(true)}><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
+                                    <motion.a href='#contact'
+                                        initial={{ opacity: 0, x: -50 }}
+                                        whileInView={{ opacity: 1, x: 10 }}
+                                        transition={{ duration: 1.4 }}
+                                        className="btn1"
+                                    >hire me</motion.a>
+                                    <motion.a onClick={() => setDownloadModal(true)}
+                                        initial={{ opacity: 0, x: -80 }}
+                                        whileInView={{ opacity: 1, x: 10 }}
+                                        transition={{ duration: 1.4 }}
+                                        type="button" className="btn" style={{ margin: "0" }}>download CV</motion.a>
+
                                 </motion.div>
                                 <div
                                     className="social-media-icons">
@@ -72,10 +82,21 @@ const Home = () => {
                         <motion.h2 initial={{ opacity: 0, x: -150 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.8 }}>I'm <span>Mohamed Sanjeed</span></motion.h2>
                         <motion.p initial={{ opacity: 0, x: -150 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.1 }}>A Freelance React.js developer</motion.p>
                         <motion.div
-                            initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 1.4 }}
+                            initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: -15 }} transition={{ duration: 1.4 }}
                             className="button-container">
-                            <a href="#contact"><motion.button initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn1">hire me</motion.button></a>
-                            <a onClick={() => setDownloadModal(true)}><motion.button initial={{ opacity: 0, x: -80 }} whileInView={{ opacity: 1, x: 10 }} transition={{ duration: 1.4 }} type="button" className="btn" style={{ margin: "0" }}>download CV</motion.button></a>
+                            <motion.a href="#contact"
+                                initial={{ opacity: 0, x: -50 }}
+                                whileInView={{ opacity: 1, x: 10 }}
+                                transition={{ duration: 1.4 }}
+                                type="button" className="btn1">
+                                hire me</motion.a>
+                            <motion.a
+                                onClick={() => setDownloadModal(true)}
+                                initial={{ opacity: 0, x: -80 }}
+                                whileInView={{ opacity: 1, x: 10 }}
+                                transition={{ duration: 1.4 }}
+                                type="button" className="btn"
+                                style={{ margin: "0" }}>download CV</motion.a>
                         </motion.div>
                     </div>
                 </div>
