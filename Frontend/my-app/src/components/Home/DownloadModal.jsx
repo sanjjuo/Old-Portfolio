@@ -13,7 +13,7 @@ const DownloadModal = (props) => {
             >
                 <Modal.Header closeButton style={{ border: "none" }} />
                 <Modal.Body>
-                    <h4 style={{ fontWeight: 600, color:"#fff" , fontSize:"21px"}}>Are you sure you want to download the Resume Now ?</h4>
+                    <h4 style={{ fontWeight: 600, color:"#fff" , fontSize:"20px"}}>Are you sure you want to download the Resume Now ?</h4>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button style={{ backgroundColor: "transparent" ,border:"2px solid #fff", width:"30%" }} onClick={props.onHide}>No</Button>

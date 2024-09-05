@@ -45,22 +45,22 @@ const MyNavbar = () => {
             <section className="mobile-navbar-section">
                 <ul>
                     <li>sanjeed.</li>
-                    <li onClick={() => {setOffcanvas(true); handleMenu;}}>{!menu ? <HiMenuAlt3 size={30} /> : <FaXmark/> }</li>
+                    <li onClick={() => setOffcanvas(true)}>{!offcanvas ? <HiMenuAlt3 size={30} /> : <FaXmark size={30} /> }</li>
                 </ul>
-                <Offcanvas className="offcanvas" show={offcanvas} onHide={() => setOffcanvas(false)} placement="start">
+                <Offcanvas className="offcanvas" show={offcanvas} onHide={() => setOffcanvas(false)} placement="start" scroll="true">
                     <Offcanvas.Header className='p-0'>
                         <Offcanvas.Title className='offcanvas-title'>Menu</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body className='offcanvas-body'>
                         <div className="offcanvas-items">
                             <ul>
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Resume</li>
-                                <li>Services</li>
-                                <li>Skills</li>
-                                <li>Works</li>
-                                <li>Contact</li>
+                                <li><a href="#home" style={{color:"inherit", textDecoration:"none"}}>Home</a></li>
+                                <li><a href="#about"style={{color:"inherit", textDecoration:"none"}} >About</a></li>
+                                <li><a href="#resume"style={{color:"inherit", textDecoration:"none"}} >Resume</a></li>
+                                <li><a href="#service"style={{color:"inherit", textDecoration:"none"}} >Services</a></li>
+                                <li><a href="#skill"style={{color:"inherit", textDecoration:"none"}} >Skills</a></li>
+                                <li><a href="#works" style={{color:"inherit", textDecoration:"none"}}>Works</a></li>
+                                <li><a href="#contact" style={{color:"inherit", textDecoration:"none"}}>Contact</a></li>
                             </ul>
                         </div>
                         <div className='social-media-icons'>

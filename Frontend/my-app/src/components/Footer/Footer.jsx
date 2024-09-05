@@ -15,9 +15,12 @@ const Footer = () => {
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="footer-about">
                                 <h3>about</h3>
-                                <p>Far far away, behind the word mountains,
-                                    far from the countries Vokalia and Consonantia,
-                                    there live the blind texts.</p>
+                                <p>Jr React Developer with 6 months of experience in designing and developing.
+                                Skilled in variety of Programming languages and technologies including
+                                React.js, MERN stack, React Native, HTML, CSS, JavaScript. Proficient in
+                                building scalable, efficient, and user-friendly web and mobile applications.
+                                Passionate about staying up-to-date with the latest technologies and best
+                                practices.</p>
                                     <ul>
                                         <Link  to="https://www.facebook.com/profile.php?id=100092943613170" target='_blank'><li><FaFacebookF /></li></Link>
                                         <Link to="https://www.instagram.com/sanjjuo/" target='_blank'><li><FaInstagram /></li></Link>
