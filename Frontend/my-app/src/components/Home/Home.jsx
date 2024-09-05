@@ -61,7 +61,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, x: -10 }}
                                 transition={{ duration: 0.5 }}
                                 className="home-person-image">
-                                <img src="me.png" alt="" />
+                                <img src="me2.PNG" alt="" />
                             </motion.div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const Home = () => {
                         whileInView={{ opacity: 1, x: -10 }}
                         transition={{ duration: 0.5 }}
                         className="home-person-image">
-                        <img src="me.png" alt="" />
+                        <img src="me2.PNG" alt="" />
                     </motion.div>
                     <div className="contents">
                         <motion.h1 initial={{ opacity: 0, x: -150 }} whileInView={{ opacity: 1, x: -10 }} transition={{ duration: 0.5 }}>hello!</motion.h1>
