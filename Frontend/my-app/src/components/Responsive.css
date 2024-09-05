@@ -71,7 +71,7 @@
         font-weight: 700;
         text-transform: capitalize;
         letter-spacing: 2px;
-        font-size: 14px;
+        font-size: 18px;
         color: #fff;
         transition: transform 0.3s ease;
         transform: scale(1);
@@ -256,7 +256,7 @@
     /* about */
 
     .about-section {
-        padding: 40px 0 0 !important;
+        padding: 0px 0 0 !important;
     }
 
     .about-section .container-fluid {
