@@ -15,7 +15,7 @@ const Footer = () => {
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="footer-about">
                                 <h3>about</h3>
-                                <p>Jr React Developer with 6 months of experience in designing and developing.
+                                <p>Jr React.js Developer with 6 months of experience in designing and developing.
                                 Skilled in variety of Programming languages and technologies including
                                 React.js, MERN stack, React Native, HTML, CSS, JavaScript. Proficient in
                                 building scalable, efficient, and user-friendly web and mobile applications.

@@ -8,7 +8,7 @@
 
     .mobile-navbar-section {
         display: block;
-        padding: 10px 0;
+        padding: 10px 0 0;
     }
 
     .mobile-navbar-section ul {
@@ -17,6 +17,7 @@
         list-style: none;
         justify-content: space-between;
         align-items: center;
+        margin: 0;
     }
 
     .mobile-navbar-section li:first-child {
@@ -33,7 +34,7 @@
     }
 
     .offcanvas {
-        max-width: 65%;
+        max-width: 75%;
         padding: 20px 15px;
         background-color: #212222;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -62,8 +63,8 @@
     }
 
     .offcanvas-body .offcanvas-items ul {
-        line-height: 40px;
-        padding: 0 0.5rem;
+        line-height: 55px;
+        padding: 0 10px;
         list-style: none;
     }
 
@@ -75,6 +76,17 @@
         color: #fff;
         transition: transform 0.3s ease;
         transform: scale(1);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .offcanvas-body .offcanvas-items li a{
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .offcanvas-body .offcanvas-items li:hover {
@@ -86,18 +98,18 @@
         padding: 0;
         list-style: none;
         display: flex;
-        gap: 5px;
+        gap: 10px;
         margin: 0;
     }
 
     .offcanvas-body .social-media-icons li {
-        width: 37px;
-        height: 37px;
+        width: 42px;
+        height: 42px;
         border-radius: 99px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 22px;
         transition: transform 0.3s ease;
         background-color: #212222;
         border: 1px solid #ffffff23;
@@ -127,7 +139,7 @@
 
 
     .mobile-home-section .home-person-image {
-        height: 600px;
+        height: 620px;
         width: 100%;
     }
 
@@ -140,7 +152,7 @@
 
     .mobile-home-section .contents {
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
         text-align: center;
         padding: 0;
 
@@ -189,7 +201,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         background-color: #ffbd39;
-        border: 1px solid transparent;
+        border: 2px solid #ffbd39;
         color: #000;
         font-weight: 600;
         border-radius: 10px;
@@ -203,7 +215,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         color: #fff;
         font-weight: 600;
         border-radius: 10px;
@@ -212,14 +224,14 @@
 
     .mobile-home-section .contents .button-container .btn1:hover {
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         color: #ffbd39;
     }
 
     .mobile-home-section .contents .button-container .btn:hover {
         background-color: #ffbd39;
         color: #000;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
     }
 
     .mobile-home-section .contents .social-media-icons ul {
@@ -402,7 +414,7 @@
 
     .skills-bars .bar {
         width: 100%;
-        height: 15px;
+        height: 10px;
     }
 
     .skills-bars li h5 {
@@ -560,6 +572,13 @@
 
     .footer-section .footer-contents .footer-about ul {
         margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-section .footer-contents .footer-about li {
+        font-size: 22px;
     }
 
     .footer-section .footer-contents .links-footer h3 {

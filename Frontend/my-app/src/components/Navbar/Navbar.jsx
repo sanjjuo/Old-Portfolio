@@ -6,6 +6,13 @@ import { Link } from "react-router-dom"
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaXmark, FaXTwitter } from "react-icons/fa6";
+import { FaHome } from "react-icons/fa";
+import { HiUser } from "react-icons/hi2";
+import { IoReader } from "react-icons/io5";
+import { GrServices } from "react-icons/gr";
+import { GiBrain } from "react-icons/gi";
+import { PiProjectorScreenFill } from "react-icons/pi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import ReactWhatsapp from 'react-whatsapp';
 
 const MyNavbar = () => {
@@ -54,13 +61,13 @@ const MyNavbar = () => {
                     <Offcanvas.Body className='offcanvas-body'>
                         <div className="offcanvas-items">
                             <ul>
-                                <li><a href="#home" style={{color:"inherit", textDecoration:"none"}}>Home</a></li>
-                                <li><a href="#about"style={{color:"inherit", textDecoration:"none"}} >About</a></li>
-                                <li><a href="#resume"style={{color:"inherit", textDecoration:"none"}} >Resume</a></li>
-                                <li><a href="#service"style={{color:"inherit", textDecoration:"none"}} >Services</a></li>
-                                <li><a href="#skill"style={{color:"inherit", textDecoration:"none"}} >Skills</a></li>
-                                <li><a href="#works" style={{color:"inherit", textDecoration:"none"}}>Works</a></li>
-                                <li><a href="#contact" style={{color:"inherit", textDecoration:"none"}}>Contact</a></li>
+                                <li><a href="#home" ><FaHome/>Home</a></li>
+                                <li><a href="#about"><HiUser/>About</a></li>
+                                <li><a href="#resume"><IoReader/>Resume</a></li>
+                                <li><a href="#service"><GrServices/>Services</a></li>
+                                <li><a href="#skill"><GiBrain/>Skills</a></li>
+                                <li><a href="#works" ><PiProjectorScreenFill/>Works</a></li>
+                                <li><a href="#contact" ><BiSolidPhoneCall/>Contact</a></li>
                             </ul>
                         </div>
                         <div className='social-media-icons'>

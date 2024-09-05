@@ -24,7 +24,7 @@ const About = () => {
                             transition={{ duration: 1.5 }}
                             className="col-md-7">
                             <h2>Hello, I'm Mohamed Sanjeed !</h2>
-                            <p>Jr React Developer with 6 months of experience in designing and developing.
+                            <p>Jr React.js Developer with 6 months of experience in designing and developing.
                                 Skilled in variety of Programming languages and technologies including
                                 React.js, MERN stack, React Native, HTML, CSS, JavaScript. Proficient in
                                 building scalable, efficient, and user-friendly web and mobile applications.
