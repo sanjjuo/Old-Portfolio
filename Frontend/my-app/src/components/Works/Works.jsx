@@ -74,7 +74,7 @@ const Works = () => {
                                     <Card.Img variant="top" src={work.image} />
                                     <Card.Body>
                                         <Card.Title className='title'>{work.name} <span><HiMiniEye onClick={() => handleClick(work)} /></span></Card.Title>
-                                        <Link style={{color:"inherit", textDecoration:"none"}} to={work?.link} target='_blank'><Button variant="primary">View Project <MdKeyboardDoubleArrowRight /></Button></Link>
+                                        <Link style={{color:"inherit", textDecoration:"none"}} to={work?.vercel} target='_blank'><Button variant="primary">View Project <MdKeyboardDoubleArrowRight /></Button></Link>
                                     </Card.Body>
                                 </Card>
                             </motion.div>

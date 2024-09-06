@@ -35,7 +35,7 @@ const WorkModal = ({ show, onHide, work }) => {
                         <div className="col-md-8">
                             <div className="details">
                                 <p>{work.description}</p>
-                                <Link style={{ color: "inherit", textDecoration: "none" }} to={work?.link} target='_blank'><Button variant="primary" onClick={onHide}>View Project <MdKeyboardDoubleArrowRight /></Button></Link>
+                                <Link style={{ color: "inherit", textDecoration: "none" }} to={work?.vercel} target='_blank'><Button variant="primary" onClick={onHide}>View Project <MdKeyboardDoubleArrowRight /></Button></Link>
                             </div>
                         </div>
                     </div>
