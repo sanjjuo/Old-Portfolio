@@ -5,7 +5,7 @@ export const works = [
         "image":"/Tomato.png",
         "description":"A food delivery website lets users browse restaurants, place orders, and pay online,with features like order tracking, user accounts, and promotions. It’s built using React.js for the frontend and Node.js with a database like MongoDB for efficient order management",
         "link":"https://github.com/sanjjuo/Food-delivery-website",
-        "vercel":"https://food-delivery-website-one-livid.vercel.app/"
+        "vercel":"https://food-delivery-website-74z5pz6od-mohamed-sanjeed-ks-projects.vercel.app/"
     },
     {
         "id":2,
